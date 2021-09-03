@@ -24,11 +24,6 @@ For example, pixel31 indicates the pixel that is in the fourth column from the l
 
 Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
 
-000 001 002 003 ... 026 027
-028 029 030 031 ... 054 055
-056 057 058 059 ... 082 083
- |   |   |   |  ...  |   |
-728 729 730 731 ... 754 755
-756 757 758 759 ... 782 783 
+![345](https://user-images.githubusercontent.com/60442877/132073956-02debb31-593b-4e80-90af-2420140b08f3.jpg)
 
 The test data set, (test.csv), is the same as the training set, except that it does not contain the "label" column.
