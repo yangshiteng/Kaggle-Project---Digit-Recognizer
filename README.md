@@ -27,3 +27,31 @@ Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
 ![345](https://user-images.githubusercontent.com/60442877/132073956-02debb31-593b-4e80-90af-2420140b08f3.jpg)
 
 The test data set, (test.csv), is the same as the training set, except that it does not contain the "label" column.
+
+# Data Preparation
+
+1. check for null and missing values
+2. Normalization (CNN converg faster on [0..1] data than on [0..255])
+3. Reshape
+4. Label Encoding
+5. Split training and validation set
+
+# Model Descprition 
+
+This is a 5 layers Sequential Convolutional Neural Network for digits recognition trained on MNIST dataset. 
+I choosed to build it with keras API (Tensorflow backend) which is very intuitive
+
+1. RMSprop as the optimizer
+2. Annealing method of the learning rate
+3. Data Augmentation
+    * Randomly rotate some training images by 10 degrees
+    * Randomly Zoom by 10% some training images
+    * Randomly shift images horizontally by 10% of the width
+    * Randomly shift images vertically by 10% of the height
+
+
+
+
+
+
+
